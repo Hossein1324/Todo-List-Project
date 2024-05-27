@@ -28,4 +28,6 @@ function addTodo(event) {
         todoDiv.appendChild(deleteButton);
         // append to ul tag
         todoList.appendChild(todoDiv);
+        // clear input text
+        todoInput.value = '';
 }
