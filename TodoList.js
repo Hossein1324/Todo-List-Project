@@ -21,7 +21,7 @@ function addTodo(event) {
      todoDiv.appendChild(newTodo);
     //  creat check button
     const checkButton = document.createElement('button');
-    checkButton.innerText = 'check';
+    checkButton.innerText = 'done';
     checkButton.classList.add('check-btn');
     todoDiv.appendChild(checkButton);
         //  creat delete button
@@ -36,11 +36,19 @@ function addTodo(event) {
 }
 
 function deleteCheck (e) {
+    // delete button
 const item = e.target;
 
 if (item.classList[0] === "delete-btn") {
     const todo = item.parentElement;
     todo.remove();
+}
+// check button
+
+if (item.classList[0] === 'check-btn') {
+    const todo = item.parentElement;
+    todo.classList.toggle('line-check')
+
 }
 
 }
