@@ -43,3 +43,9 @@ form button:hover {
     color: white;
     background-color:rgb(1, 29, 29) ;
 }
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

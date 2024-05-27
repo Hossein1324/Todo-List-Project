@@ -10,7 +10,7 @@ function addTodo(event) {
     event.preventDefault();
 // creat div item of ul
     const todoDiv = document.createElement('div');
-    todoDiv.classList.add('todo')
+    todoDiv.classList.add('todo');
 // creat li inside of the div
      const newTodo = document.createElement('li');
      newTodo.innerText = 'hey';
