@@ -41,7 +41,11 @@ const item = e.target;
 
 if (item.classList[0] === "delete-btn") {
     const todo = item.parentElement;
-    todo.remove();
+    todo.classList.add('delet-tr');
+    // Animation
+    todo.addEventListener('transitionend', function() {
+        todo.remove()
+    });
 }
 // check button
 
