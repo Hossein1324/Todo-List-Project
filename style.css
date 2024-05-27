@@ -55,7 +55,7 @@ form button {
 
 @media screen and (max-width:600px) {
     form input, form button {
-        padding: 0.3rem;
+        padding: 0.3rem 0.3rem;
         font-size: 1.5rem;
     }
 }
@@ -110,7 +110,25 @@ form button:hover {
 .line-check {
     text-decoration: line-through;
     opacity: 0.5;
+    font-size: 1rem;
     
+}
+
+@media screen and (max-width:600px) {
+    .todo-list {
+        min-width: 20%;
+    }
+    .todo {
+        margin: 0.3rem;
+        font-size: 1.2rem;
+    }
+    .check-btn, .delete-btn {
+        padding: 0.9rem;
+        font-size: 0.9rem;
+    }
+   .todo-item {
+    padding: 0rem 3.4rem;
+   }
 }
 
 .delet-tr {
