@@ -1,14 +1,17 @@
+
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 
+
+// run functions
 document.addEventListener('DOMContentLoaded', getTodos);
 todoButton.addEventListener('click', addTodo);
 
 todoList.addEventListener('click', deleteCheck);
 
 
-
+// functions
 function addTodo(event) {
     event.preventDefault();
 // creat div item of ul
@@ -119,6 +122,6 @@ function removeSave (todo) {
     const todoIndex = todo.children[0].innerText;
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem('todos', JSON.stringify(todos));
-    console.log('ok');
+    
     
 }
